@@ -1,5 +1,9 @@
-## Hi there 👋
+## Hi 👋， 我是[关木](https://x.com/ZeroZ_JQ)
 
+
+## 如何找到我
+
+- 📝 [博客](https://zerozzz.win/)
 <!--
 **ZeroZ-lab/ZeroZ-lab** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
