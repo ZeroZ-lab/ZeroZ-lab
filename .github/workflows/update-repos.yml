@@ -1,0 +1,44 @@
+name: Update Top Repos
+
+# 每天 北京时间 09:00（UTC 01:00）自动运行；也支持手动触发
+on:
+  schedule:
+    - cron: "0 1 * * *"   # UTC 01:00 = Asia/Shanghai 09:00
+  workflow_dispatch:      # 允许在 Actions 页面手动点「Run workflow」
+
+permissions:
+  contents: write         # 允许 Action 提交回仓库
+
+concurrency:
+  group: update-repos
+  cancel-in-progress: true
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+
+      - name: Update README with top repos
+        env:
+          # 使用 Action 自动注入的 GITHUB_TOKEN，避免触发 API 限流
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: python scripts/update_repos.py
+
+      - name: Commit changes
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add README.md
+          if git diff --cached --quiet; then
+            echo "ℹ️  无变更，跳过提交。"
+          else
+            git commit -m "chore: auto-update top repos [skip ci]"
+            git push
+          fi
