@@ -1,5 +1,6 @@
 ## Hi 👋， 我是[关木](https://x.com/ZeroZ_JQ)
 
+[![GitHub Roast](https://githubroast.dev/api/card/ZeroZ-lab)](https://githubroast.dev/u/ZeroZ-lab)
 
 ## 如何找到我
 
