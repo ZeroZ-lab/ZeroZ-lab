@@ -20,7 +20,7 @@
 <tr>
 <td width="50%" valign="top">
 
-`# about`
+# about
 
 - 🌱 目前在折腾一些有趣的开源项目
 - 🎯 关注领域：Web 全栈、开发者工具
@@ -30,7 +30,7 @@
 </td>
 <td width="50%" valign="top">
 
-`# connect`
+# connect
 
 [![X](https://img.shields.io/badge/X-@ZeroZ__JQ-000000?style=flat&logo=x)](https://x.com/ZeroZ_JQ)
 [![Blog](https://img.shields.io/badge/Blog-zerozzz.win-000000?style=flat&logo=hexo)](https://zerozzz.win/)
@@ -44,7 +44,7 @@
 
 <!-- 技术栈 -->
 
-`# tech-stack`
+# tech-stack
 
 <table>
 <tr>
@@ -75,7 +75,7 @@
 
 <!-- GitHub 统计 -->
 
-`# stats`
+# stats
 
 <div align="center">
 
@@ -88,7 +88,7 @@
 
 <!-- 头部仓库展示：由 scripts/update_repos.py 自动维护，请勿手动编辑标记间内容 -->
 
-`# featured-repos`
+# featured-repos
 
 *以下仓库按 ⭐ 数自动排序，每日由 GitHub Action 同步。*
 
